@@ -1,0 +1,248 @@
+:root {
+  /* Fonts */
+  --main-fonts: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #757575;
+  --title-txt-cl: #212121;
+  --logo-cl: #000000;
+  --accent-txt-cl: #2196f3;
+  --hero-txt-cl: #ffffff;
+  --btn-txt-cl: #ffffff;
+  --footer-link-cl: rgba(255, 255, 255, 0.6);
+
+  /* Background colors */
+
+  --main-bcg-cl: #ffffff;
+  --secondary-bcg-cl: #f5f4fa;
+  --hero-bcg-cl: #2f303a;
+  --accent-bcg-cl: #2196f3;
+  --btn-hover-cl: #188ce8;
+}
+
+body {
+  font-family: var(--main-fonts);
+  color: var(--main-txt-cl);
+  background-color: var(--main-bcg-cl);
+  letter-spacing: 0.03em;
+}
+
+/* Reset */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ^^^^^^^^
+HEADER^^^^^^^ */
+header {
+  background-color: var(--hero-txt-cl);
+}
+/* LOGO */
+.logo {
+  color: var(--logo-cl);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.logo-span {
+  color: var(--accent-txt-cl);
+}
+
+/* SITE-NAVIGATION */
+.site-nav .link {
+  color: var(--title-txt-cl);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.adress .link:hover,
+.adress .link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.auth-nav .link {
+  color: var(--main-txt-cl);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.nav-bcg {
+  background-color: var(--hero-text-color);
+}
+
+/* HERO */
+.hero,
+.footer {
+  background-color: var(--hero-bcg-cl);
+}
+.hero-title {
+  color: var(--hero-txt-cl);
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* BUTTON hero*/
+.button {
+  color: var(--hero-txt-cl);
+  background-color: var(--accent-bcg-cl);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--btn-hover-cl);
+}
+
+/* FEATURES Преимущества*/
+.features .item-title {
+  color: var(--title-txt-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.features .text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* COMPETITION */
+.competition-title {
+  color: var(--title-txt-cl);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+/* OUR TEAM */
+.team {
+  background-color: var(--secondary-bcg-cl);
+}
+
+.team-item {
+  background-color: var(--main-bcg-cl);
+}
+
+.team-title {
+  color: var(--title-txt-cl);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.team-item .title {
+  color: var(--title-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team-item .position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+/* GALLERY - page Portfolio */
+
+.filtr-item .btn {
+  color: var(--title-txt-cl);
+  background-color: var(--secondary-bcg-cl);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  cursor: pointer;
+}
+
+.filtr-item .btn:hover,
+.filtr-item .btn:focus {
+  color: var(--btn-txt-cl);
+  background-color: var(--accent-bcg-cl);
+}
+
+.gallery .img-name {
+  color: var(--title-txt-cl);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.gallery .img-type {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+/* FOOTER */
+.footer .logo {
+  color: var(--main-bcg-cl);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer .logo-span {
+  color: var(--accent-txt-cl);
+}
+
+.adress .location {
+  color: var(--btn-txt-cl);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+.adress .auth-list {
+  color: var(--footer-link-cl);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
