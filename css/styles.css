@@ -20,7 +20,8 @@
   --accent-bcg-cl: #2196f3;
   --btn-hover-cl: #188ce8;
 
-  --border-cl: #ececec;
+  --header-border-cl: #ececec;
+  --btn-border-color: #EEEEEE;
   --border-radius-button: 4px;
   --border-radius-cards: 0px 0px 4px 4px;
   --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -29,6 +30,7 @@
   --box-shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
+    --
   /*  */
   --items: 3;
   --indent: 30px;
@@ -67,7 +69,7 @@ body {
   list-style: none;
 }
 
-img {
+.img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -80,7 +82,7 @@ header {
 }
 
 .header {
-  border-bottom: 1px solid var(--border-cl);
+  border-bottom: 1px solid var(--header-border-cl);
 }
 .header-container {
   display: flex;
@@ -184,6 +186,8 @@ header {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+
+  border: none;
 
   box-shadow: var(--box-shadow-button);
   border-radius: var(--border-radius-button);
@@ -319,7 +323,7 @@ header {
   cursor: pointer;
 
   border-radius: var(--border-radius-button);
-  border-color: #eeeeee;
+  border: none;
 
   padding: 6px 22px;
 }
@@ -334,7 +338,6 @@ header {
 .btn:focus {
   color: var(--btn-txt-cl);
   background-color: var(--accent-bcg-cl);
-
   box-shadow: var(--box-shadow-active);
 }
 
