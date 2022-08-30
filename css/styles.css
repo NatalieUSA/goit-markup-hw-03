@@ -34,6 +34,7 @@
   /*  */
   --items: 3;
   --indent: 30px;
+}
 
 * {
   margin: 0;
@@ -236,13 +237,13 @@ HEADER^^^^^^^ */
 
 .feature-item {
   width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  /* flex-basis: calc((100 - 3 * 30) / 4);  */
+   margin-right: 30px; 
 }
 
 .feature-item:nth-child(4n) {
-  margin-right: 0;
-} 
-
+  margin-right: 0; 
+}  
 
 /* COMPETITION */
 .title {
@@ -364,7 +365,7 @@ HEADER^^^^^^^ */
   padding: 20px 24px;
   border-right: 1px solid var(--card-border);
   border-left: 1px solid var(--card-border);
-  border-bottom: 1px solid var(--card-border); 
+  border-bottom: 1px solid var(--card-border);  
 } 
 
 /* FOOTER */
