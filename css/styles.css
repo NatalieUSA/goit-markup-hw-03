@@ -21,7 +21,7 @@
   --btn-hover-cl: #188ce8;
 
   --header-border-cl: #ececec;
-  --btn-border-color: #EEEEEE;
+  --card-border: #EEEEEE;
   --border-radius-button: 4px;
   --border-radius-cards: 0px 0px 4px 4px;
   --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -30,7 +30,6 @@
   --box-shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  
   /*  */
   --items: 3;
   --indent: 30px;
@@ -69,7 +68,7 @@ body {
   list-style: none;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -81,8 +80,8 @@ HEADER^^^^^^^ */
 .header {
   background-color: var(--hero-txt-cl);
   border-bottom: 1px solid var(--header-border-cl);
-  border: 0;
 }
+
 .header-container {
   display: flex;
 }
@@ -93,16 +92,12 @@ HEADER^^^^^^^ */
   align-items: center;
 }
 .site-nav,
-.auth-nav  {
+.auth-nav {
   display: flex;
   gap: 50px;
-  /* padding: 32px 0; */
+  padding: 32px 0; 
 }
-.site-nav .link,
-.auth-nav .link {
-  display: block;
-  padding: 32px 0;
-}
+
 
 /* LOGO */
 .logo {
@@ -238,12 +233,12 @@ HEADER^^^^^^^ */
 .feature-item {
   width: calc((100% - 90px) / 4);
   /* flex-basis: calc((100 - 3 * 30) / 4);  */
-   margin-right: 30px; 
+  margin-right: 30px;
 }
 
 .feature-item:nth-child(4n) {
-  margin-right: 0; 
-}  
+  margin-right: 0;
+}
 
 /* COMPETITION */
 .title {
@@ -288,17 +283,19 @@ HEADER^^^^^^^ */
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  margin: 30px 0 10px;
+  margin-bottom: 10px;
 }
 
 .team-item .position {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-/* team-list-container */
+.team-text {
+  padding: 30px 0;
+}
 
 /* GALLERY - page Portfolio */
 .filtr {
@@ -365,15 +362,15 @@ HEADER^^^^^^^ */
   padding: 20px 24px;
   border-right: 1px solid var(--card-border);
   border-left: 1px solid var(--card-border);
-  border-bottom: 1px solid var(--card-border);  
-} 
+  border-bottom: 1px solid var(--card-border);
+}
 
 /* FOOTER */
 .footer {
   padding: 60px 0;
 }
 
-.footer .logo {
+.logo-footer {
   color: var(--main-bcg-cl);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -381,6 +378,7 @@ HEADER^^^^^^^ */
   font-size: 26px;
   line-height: 1.19;
 
+  display: block;
   margin-right: 0;
   margin-bottom: 20px;
 }
@@ -409,13 +407,4 @@ HEADER^^^^^^^ */
 
 .link.transparent {
   color: var(--footer-link-cl);
-}
-
-.footer .logo {
-  color: var(--main-bcg-cl);
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
